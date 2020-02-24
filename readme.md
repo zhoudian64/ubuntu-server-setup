@@ -1,6 +1,7 @@
 # ubuntu-server-setup
 
 some script for high-speed LAN internet connect.
+maybe you should run all these script as root user...
 
 ## apt main 
 ```shell
