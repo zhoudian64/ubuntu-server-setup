@@ -1,4 +1,5 @@
-sudo apt-get update && apt-get install -y apt-transport-https
+sudo apt-get update 
+sudo apt-get install -y apt-transport-https
 curl https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | apt-key add - 
 sudo mv /etc/apt/sources.list.d/kubernetes.list /etc/apt/sources.list.d/kubernetes.list.bak
 sudo cat << EOF > /etc/apt/sources.list.d/kubernetes.list
