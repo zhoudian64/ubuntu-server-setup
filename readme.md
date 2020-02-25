@@ -25,7 +25,7 @@ sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-d
 
 ## k8s.gcr.io
 ```shell
-curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/k8s_gcr_io-aliyun.sh
+curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
 # and you should modify those version tags
-curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh k8s_gcr_io-aliyun.sh
 ```
