@@ -27,5 +27,15 @@ sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-d
 ```shell
 curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
 # and you should modify those version tags
-curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh k8s_gcr_io-aliyun.sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
+chmod +x k8s_gcr_io-aliyun.sh
+./k8s_gcr_io-aliyun.sh
+```
+### kubeadm init
+with flannel
+```shell
+kubeadm init --pod-network-cidr=10.244.0.0/16 --image-repository registry.aliyuncs.com/google_containers
+# kubectl apply -f https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/kube-flannel.yaml
+# (recommended)
+kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/kube-flannel.yaml
 ```
