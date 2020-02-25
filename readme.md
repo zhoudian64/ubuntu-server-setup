@@ -19,6 +19,13 @@ sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-k
 
 ## apt docker-ce
 ```shell
-sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-dockeraliyun.sh | sh
+sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-docker-aliyun.sh | sh
 sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-docker-aliyun.sh | sh
+```
+
+## k8s.gcr.io
+```shell
+curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/k8s_gcr_io-aliyun.sh
+# and you should modify those version tags
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh
 ```
