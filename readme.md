@@ -45,6 +45,7 @@ cat > /etc/docker/daemon.json <<EOF
     "max-size": "100m"
   },
   "storage-driver": "overlay2"
+  // you may get a registry-mirrors from aliyun.com
 }
 EOF
 mkdir -p /etc/systemd/system/docker.service.d
