@@ -35,6 +35,8 @@ chmod +x k8s_gcr_io-aliyun.sh
 ### kubeadm init
 with flannel
 ```shell
+# you need to disable swap
+sudo swapoff -a
 kubeadm init --pod-network-cidr=10.244.0.0/16 --image-repository registry.aliyuncs.com/google_containers
 # kubectl apply -f https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/kube-flannel.yaml
 # (recommended)
