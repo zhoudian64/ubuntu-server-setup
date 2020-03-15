@@ -37,6 +37,20 @@ with flannel
 ```shell
 # you need to disable swap
 sudo swapoff -a
+cat > /etc/docker/daemon.json <<EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+mkdir -p /etc/systemd/system/docker.service.d
+systemctl daemon-reload
+systemctl restart docker
+
 kubeadm init --pod-network-cidr=10.244.0.0/16 --image-repository registry.aliyuncs.com/google_containers
 # kubectl apply -f https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/kube-flannel.yaml
 # (recommended)
