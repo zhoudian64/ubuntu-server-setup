@@ -1,5 +1,6 @@
 # ubuntu-server-setup
 
+it's now ONLY for 18.04 LTS, i may update it after 20.04 published
 some script for high-speed LAN internet connect.
 maybe you should run all these script as root user...
 
