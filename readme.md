@@ -19,6 +19,7 @@ sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-k
 ```
 
 ## apt docker-ce
+FAILED mirrors.aliyun.com down
 ```shell
 sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-docker-aliyun.sh | sh
 sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-docker-aliyun.sh | sh
