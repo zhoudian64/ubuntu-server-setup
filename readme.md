@@ -63,3 +63,12 @@ kubeadm init --pod-network-cidr=10.244.0.0/16 --image-repository registry.aliyun
 # (recommended)
 kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/kube-flannel.yaml
 ```
+
+### tidb-opertor
+```shell
+# kubectl apply -f https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/tiller-rbac.yaml && \
+# helm init --service-account=tiller --upgrade
+# (recommended)
+kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/tiller-rbac.yaml && \
+helm init --service-account=tiller --upgrade
+```
