@@ -72,4 +72,6 @@ kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/kub
 kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/tiller-rbac.yaml && \
 helm init --service-account tiller --upgrade --tiller-image gcr.azk8s.cn/kubernetes-helm/tiller:v2.16.1 \
 --stable-repo-url https://mirror.azure.cn/kubernetes/charts/
+kubectl apply -f https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/crd.yaml && \
+kubectl get crd tidbclusters.pingcap.com
 ```
