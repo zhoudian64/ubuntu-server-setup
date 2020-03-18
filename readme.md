@@ -6,16 +6,16 @@ maybe you should run all these script as root user...
 
 ## apt main 
 ```shell
-sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-main-aliyun.sh | sh
+curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-main-aliyun.sh | sh
 # user repo on gitee even faster
-sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-main-aliyun.sh | sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-main-aliyun.sh | sh
 ```
 
 ## apt k8s
 ```shell
-sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-k8s-aliyun.sh | sh
+curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-k8s-aliyun.sh | sh
 # use repo on gitee even faster
-sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-k8s-aliyun.sh | sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-k8s-aliyun.sh | sh
 ```
 
 ## apt docker-ce
@@ -26,15 +26,15 @@ curl -skSL https://mirror.azure.cn/repo/install-docker-ce.sh | sh -s -- --mirror
 ```
 instead of 
 ```shell
-sudo curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-docker-aliyun.sh | sh
-sudo curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-docker-aliyun.sh | sh
+curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/apt-docker-aliyun.sh | sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/apt-docker-aliyun.sh | sh
 ```
 
 ## k8s.gcr.io
 ```shell
 curl -fSL https://raw.githubusercontent.com/zhoudian64/ubuntu-server-setup/master/k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
 # and you should modify those version tags
-curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
+curl -fSL https://gitee.com/zhoudian64/ubuntu-server-setup/raw/master/k8s_gcr_io-aliyun.sh -o k8s_gcr_io-aliyun.sh
 chmod +x k8s_gcr_io-aliyun.sh
 ./k8s_gcr_io-aliyun.sh
 ```
@@ -42,7 +42,7 @@ chmod +x k8s_gcr_io-aliyun.sh
 with flannel
 ```shell
 # you need to disable swap
-sudo swapoff -a
+swapoff -a
 cat > /etc/docker/daemon.json <<EOF
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
