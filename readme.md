@@ -52,6 +52,9 @@ cat > /etc/docker/daemon.json <<EOF
   },
   "storage-driver": "overlay2"
   // you may get a registry-mirrors from aliyun.com
+  // actually I tried aliyun's registry for some days, maybe use HTTP_PROXY is the only way...
+  // checkout https://docs.docker.com/config/daemon/systemd/
+  // unfortunately HTTP_PORXY is the only mechanism can't be modified in daemon.json
 }
 EOF
 mkdir -p /etc/systemd/system/docker.service.d
