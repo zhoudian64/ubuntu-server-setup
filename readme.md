@@ -1,5 +1,9 @@
 # ubuntu-server-setup
 
+## important
+After struggle for a month I give up this silly project.
+It's MORE clever to create a gateway, which can access to gcr.io and has a clean DNS.
+
 it's now ONLY for 18.04 LTS, i may update it after 20.04 published
 some script for high-speed LAN internet connect.
 maybe you should run all these script as root user...
